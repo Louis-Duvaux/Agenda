@@ -1,2 +1,33 @@
-Ecrire ici votre réponse à la question UML.
+Analyse comparée des deux modèles UML :
 
+Modèle original :
+Avantages :
+- Hiérarchie claire avec une classe abstraite Event comme racine
+- Séparation nette entre événements simples et répétitifs
+- On peut facilement ajouter de nouveaux types d'événements
+- Bon usage de l'héritage pour partager le comportement commun
+
+Inconvénients :
+- Plus complexe avec plusieurs niveaux d'héritage
+- Peut entraîner une duplication de code dans les sous-classes
+
+Modèle alternatif :
+Avantages :
+- Plus simple 
+- Moins de classes à gérer
+- Facile à comprendre rapidement
+- Utilisation de composition au lieu d'héritage
+
+Inconvénients :
+- Difficile d'ajouter de nouveaux types d'événements cela nécessite de modifier la classe Event
+- Moins de réutilisation de code via l'héritage
+- La classe Event devient une "classe Dieu" avec trop de responsabilités
+
+Conclusion :
+Le modèle original est préférable pour cette application car :
+- L'agenda est un domaine complexe qui peut évoluer
+- La hiérarchie permet une meilleure organisation du code
+- On anticipe l'ajout de nouveaux types d'événements
+- La séparation des préoccupations est mieux respectée
+
+Le modèle alternatif pourrait convenir pour une version simplifiée ou si on sait que les besoins ne changeront pas.
